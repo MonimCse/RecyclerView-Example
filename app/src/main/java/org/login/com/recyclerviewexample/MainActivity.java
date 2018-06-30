@@ -4,6 +4,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.RecyclerView;
 
+import org.login.com.recyclerviewexample.adapter.UserAdapter;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -23,5 +25,6 @@ public class MainActivity extends AppCompatActivity {
         userList.add("a");
 
         mRvUserList = findViewById(R.id.rv_userlist);
+        mRvUserList.setAdapter(new UserAdapter(userList));
     }
 }
