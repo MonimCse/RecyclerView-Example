@@ -2,6 +2,7 @@ package org.login.com.recyclerviewexample;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 
 import org.login.com.recyclerviewexample.adapter.UserAdapter;
@@ -25,6 +26,7 @@ public class MainActivity extends AppCompatActivity {
         userList.add("a");
 
         mRvUserList = findViewById(R.id.rv_userlist);
+        mRvUserList.setLayoutManager(new LinearLayoutManager(getApplicationContext()));
         mRvUserList.setAdapter(new UserAdapter(userList));
     }
 }
