@@ -25,7 +25,7 @@ public class UserAdapter extends RecyclerView.Adapter<UserAdapter.MyViewHolder> 
         TextView mTvName;
         public MyViewHolder(View itemView) {
             super(itemView);
-            mTvName = itemView.findViewById(R.id.rv_userlist);
+            mTvName = itemView.findViewById(R.id.tv_user);
         }
     }
 
