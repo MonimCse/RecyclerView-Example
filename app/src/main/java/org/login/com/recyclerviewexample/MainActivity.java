@@ -20,10 +20,10 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        userList.add("x");
+   /*     userList.add("x");
         userList.add("y");
         userList.add("z");
-        userList.add("a");
+        userList.add("a");*/
 
         mRvUserList = findViewById(R.id.rv_userlist);
         mRvUserList.setLayoutManager(new LinearLayoutManager(getApplicationContext()));
